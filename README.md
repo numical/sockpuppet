@@ -6,7 +6,7 @@
 * no more than `npm import package-x` and `require('package-x')`
 * npm **massive** library of packages
 * *building on the shoulders of many, many midgets*
-* having said all of this then why [this](https://youtu.be/M3BM9TB-8yA?t=913) ?
+* having said all of this then why [this](https://www.youtube.com/watch?v=M3BM9TB-8yA&t=913s) ?
 * this talk is about that 'afterthought' - a deep dive into node package management
 
 
@@ -80,7 +80,7 @@
 
 ## Future Directions
 * deno
-  * [radically simplified](https://blog.logrocket.com/deno-1-0-what-you-need-to-know/)
+  * 'radically simplified' [https://blog.logrocket.com/deno-1-0-what-you-need-to-know/](./Deno.png)
   * its own package manager based on es6 modules ([... a new npm repo?](https://www.skypack.dev/))
   * `import ${URL}` - relative or absolute, local cache
 * snowpack (front-end only)
