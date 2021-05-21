@@ -1,7 +1,7 @@
 # Package Management
 
 ## Intro
-* in my [JS talks](https://github.com/numical/jsacademy), I noted that node is the [most productive environment I have worked in](./Why%20Node.odp)
+* in my [JS talks](https://github.com/numical/jsacademy), I noted that node is the most productive environment I have worked in
 * a major part, easy modularisation and sharing of code via packages
 * no more than `npm import package-x` and `require('package-x')`
 * npm **massive** library of packages
