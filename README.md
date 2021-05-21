@@ -22,7 +22,7 @@
 
 ## Dependency Management a la Node
 ### Theory + History
-* [Directed Acyclic Graphs](https://en.wikipedia.org/wiki/Directed_acyclic_graph
+* [Directed Acyclic Graphs](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 * cannot map to a tree structure
 * rely on an algorithm  
 * [maven](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html) in java  
@@ -67,17 +67,13 @@
     * [trunk based development](https://trunkbaseddevelopment.com/)
         * _Monorepos and long-lived feature branches do not play together nicely_
     * CI
-
-* it's not just about code collocation
-* but definite advantage of package management.
-* let define the problem - UI order
+* it's not just about code co-location
 
 
 ### MonoRepo Tools
 * [Lerna](https://lerna.js.org/)
 * [RushJS](https://rushjs.io/) - superb documentation, lot of this talk from there
-
-
+k
 ## Future Directions
 * deno
   * 'radically simplified' [https://blog.logrocket.com/deno-1-0-what-you-need-to-know/](./Deno.png)
@@ -85,7 +81,7 @@
   * `import ${URL}` - relative or absolute, local cache
 * snowpack (front-end only)
   * not a package manager, rather an alternative/compliment to webpack, parcel etc.
-  * [unbundled development](https://www.snowpack.dev/concepts/how-snowpack-works) uses natibe browser esm support 
+  * [unbundled development](https://www.snowpack.dev/concepts/how-snowpack-works) uses native browser esm support 
   * [v3.x - streaming imports](https://www.snowpack.dev/posts/2021-01-13-snowpack-3-0) - (optionally) no npm at all!
 
 ## Practical
@@ -93,7 +89,12 @@
     * [npm ci](https://docs.npmjs.com/cli/v6/commands/npm-ci)
     * yarn --frozen-lockfile
 * minimize dependencies
-    * array.flatten > tree-shaking great in theory but practice (webpack link..?)  **<< TBD**
+    * flatten an array
+      * [native?](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
+      * [library?](https://lodash.com/docs/4.17.15#flatten)  
+        * pre-method packages [but...](https://lodash.com/per-method-packages)
+        * tree-shaking great in theory but [in practice..?](https://webpack.js.org/guides/tree-shaking/)
+      * [roll your own](https://github.lbg.eu-gb.bluemix.net/fpr/fpr-api-scv/blob/master/packages/fpr-api-common/src/utils/array.js)  
     * [bundlephobia](https://bundlephobia.com/) - e.g: react vs react-model vs react-router-dom
 * spot phantoms / potential doppelgangers
     * API project loads
@@ -101,6 +102,5 @@
     * [depcheck](https://github.com/depcheck/depcheck)
 * unix-philosophy
     * mashup small tools
-    * avoid [jest](https://bundlephobia.com/result?p=jest@26.6.3) and go for [mocha](https://bundlephobia.com/result?p=mocha@8.3.2) + [testdouble](https://bundlephobia.com/result?p=testdouble@3.16.1)
-
-
+    * not only runtime: 
+      * avoid [jest](https://bundlephobia.com/result?p=jest@26.6.3) and go for [mocha](https://bundlephobia.com/result?p=mocha@8.3.2) + [testdouble](https://bundlephobia.com/result?p=testdouble@3.16.1)
