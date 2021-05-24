@@ -100,6 +100,7 @@ k
     * API project loads
     * [eslint import plugin](https://www.npmjs.com/package/eslint-plugin-import)
     * [depcheck](https://github.com/depcheck/depcheck)
+    * [manage your dependencies](https://cpojer.net/posts/dependency-managers-dont-manage-your-dependencies)
 * unix-philosophy
     * mashup small tools
     * not only runtime: 
